@@ -1,0 +1,25 @@
+[package]
+name = "longgu"
+version = "0.1.0"
+authors = ["Satoshi Amemiya <satoshi_amemiya@voyagegroup.com>"]
+
+[dependencies]
+diesel = { version = "0.16.0", features = ["postgres"] }
+diesel_codegen = { version = "0.16.0", features = ["postgres"] }
+dotenv = "0.10.1"
+iron = "0.5.1"
+persistent = "0.3.0"
+r2d2-diesel = "0.16.0"
+r2d2 = "0.7.4"
+router = "0.5.1"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+serde_json = "1.0.3"
+
+[[bin]]
+name = "longgu"
+path = "src/main.rs"
+
+[[bin]]
+name = "seed"
+path = "src/bin/seed.rs"
